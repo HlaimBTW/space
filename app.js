@@ -1,3 +1,25 @@
+const loader = document.querySelector("div");
+function animation(point) {
+  return (point.innerHTML += ".");
+}
+document.addEventListener("load", () => {
+  loader.style.display = "flex";
+  setInterval(() => {
+    points = document.querySelector("span");
+    points.innerHTML = animation(points);
+  }, 300);
+});
+setInterval(() => {
+  points = document.querySelector("span");
+
+  if (points.innerHTML.length > 2) {
+    points.innerHTML = ".";
+  } else {
+    points.innerHTML = animation(points);
+  }
+}, 300);
+loader.style.display = "none";
+
 const mains = document.getElementsByClassName("main");
 const images = document.querySelectorAll("img");
 const text = document.querySelectorAll(".text");
