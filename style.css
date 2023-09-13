@@ -94,3 +94,18 @@ body {
     right: 0;
   }
 }
+.loader {
+  z-index: 999999;
+  color: white;
+  display: flex;
+  position: fixed;
+  gap: 10px;
+  font-family: "Poppins";
+  font-size: 100px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(22, 22, 29);
+  align-items: center;
+  justify-content: center;
+}
